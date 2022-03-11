@@ -1,0 +1,158 @@
+:root {
+    --colorTheme: linear-gradient(311deg, rgba(196, 250, 197, 1) 0%, rgba(98, 13, 220, 1) 0%, rgba(149, 136, 255, 1) 100%);
+    --greyTheme: linear-gradient(311deg, rgba(196, 250, 197, 1) 0%, rgba(207, 207, 207, 1) 0%, rgba(254, 254, 254, 1) 100%);
+}
+
+.colorTheme {
+    background: var(--colorTheme);
+}
+
+.greyTheme {
+    background: var(--greyTheme);
+}
+
+.important {
+    font-weight: bold;
+}
+
+* {
+    list-style-type: none;
+}
+
+.h1 {
+    font-size: 5rem;
+}
+
+nav {
+    margin-bottom: -110px;
+    z-index: 1000;
+}
+
+.navUl li {
+    margin-right: 10px;
+}
+
+.nav-link.active:hover {
+    background: white;
+    color: #0d6efd !important;
+}
+
+.Banquedigitale {
+    font-size: 1.5rem;
+}
+
+.headerContent {
+    --bs-gutter-x: 0rem;
+}
+
+.headerContent img {
+    width: 65%;
+}
+
+#moreMoney {
+    margin-top: 100px;
+}
+
+p {
+    font-size: 1.4rem;
+}
+
+.barV {
+    width: 1px;
+    height: 5rem;
+    border: 1px solid rgba(128, 128, 128, 0.623);
+    background: rgba(128, 128, 128, 0.623);
+}
+
+.transaction {
+    background: var(--greyTheme);
+    border-radius: 40px;
+}
+
+.liensCarrousel {
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+input:hover, .form button:hover {
+    border: 1px solid white;
+    background: transparent;
+    color: black;
+}
+
+.form {
+    background: linear-gradient(146deg, rgba(196, 250, 197, 1) 0%, rgba(99, 9, 220, 1) 0%, rgba(118, 19, 252, 1) 100%);
+}
+
+.formContainer {
+    background-color: white;
+}
+
+.footer {
+    position: relative;
+    font-size: 0.9rem;
+    background: transparent;
+}
+
+.footer p {
+    font-size: 0.9rem;
+}
+
+.footer:before {
+    content: "";
+    position: absolute;
+    top: -30px;
+    background: rgba(128, 128, 128, 0.363);
+    height: 1px;
+    width: 100%;
+}
+
+@media screen and (max-width: 1200px) {
+    .h1 {
+        font-size: 3rem;
+        padding-bottom: 3rem;
+    }
+
+}
+
+@media screen and (max-width: 992px) {
+    nav {
+        margin-bottom: 0px;
+    }
+
+    #moreMoney {
+        margin-top: 500px;
+    }
+
+    .formContainer {
+        background-color: transparent;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+    }
+
+    input, .formContainer button {
+        margin: 20px 0 0 0;
+        width: 100%;
+    }
+
+    .formContainer button {
+        background: white;
+        color: #0d6efd;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    * {
+        font-size: 0.8rem;
+    }
+
+    .h1 {
+        font-size: 2rem;
+    }
+
+    #moreMoney {
+        margin-top: 100px;
+    }
+}
